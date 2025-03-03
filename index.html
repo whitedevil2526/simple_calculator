@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="calc">
+      <div id="content">
+        <form>
+          <div id="output">
+            <input type="text" name="text" class="input" placeholder="Type here...">
+          </div>
+      <div class="button">
+        <input type="button" value="√" onclick="sqrt('√')">
+        <input type="button" value='C' onclick="Clear()" id="clear">
+        <input type="button" value='%' onclick="Solve('%')">
+        <input type="button" value='_' onclick="Back()" id="backspace">
+        <br>
+        <input type="button" name='1' id="1" value="1">
+        <input type="button" name='2' id="2" value="2">
+        <input type="button" name='3' id="3" value="3"/>
+        <input type="button" value='+' onclick="Solve('+')">
+        <br>
+        <input type="button" name='4' id="4" value="4"/>
+        <input type="button" name='5' id="5" value="5"/>
+        <input type="button" name='6' id="6" value="6"/>
+        <input type="button" value='-' onclick="Solve('-')">
+        <br>
+        <input type="button" name='7' id="7" value="7"/>
+        <input type="button" name='8' id="8" value="8"/>
+        <input type="button" name='9' id="9" value="9"/>
+        <input type="button" value='*' onclick="Solve('X')">
+        <br>
+        <input type="button" value='0' onclick="Solve('0')">
+        <input type="button" value='.' onclick="Solve('.')">
+        <input type="button" value='/' onclick="Solve('/')">
+        <input type="button" value='=' onclick="Result()">
+        <br>
+      </div>
+   `</form>
+  </div>
+  </div>
+   <script src='script.js'></script>
+</body>
+</html>
